@@ -11,8 +11,9 @@ import {
 import { SafeAreaView } from "react-native-safe-area-context";
 import * as Icon from "react-native-feather";
 import { useState } from "react";
-import { categories, shortVideos } from "../constants/consts";
+import { categories, shorts, videos } from "../constants/consts";
 import ShortsCard from "../components/shortsCard";
+import VideoCard from "../components/videoCard";
 
 export default function HomeScreen() {
   const [activeCategory, setActiveCategory] = useState("All");
@@ -75,7 +76,7 @@ export default function HomeScreen() {
                     backgroundColor: isActive
                       ? "white"
                       : "rgba(255,255,255,0.1)",
-                    borderRadius: 8,
+                    borderRadius: 5,
                     padding: 5,
                     marginRight: 5,
                     height: 25,
@@ -120,11 +121,17 @@ export default function HomeScreen() {
             showsHorizontalScrollIndicator={false}
             className="px-4"
           >
-            {shortVideos.map((item, index) => (
+            {shorts.map((item, index) => (
               <ShortsCard item={item} key={index} />
             ))}
           </ScrollView>
         </View>
+
+        <ScrollView showsVerticalScrollIndicator={false}>
+          {videos.map((video, index) => (
+            <VideoCard video={video} key={index} />
+          ))}
+        </ScrollView>
       </ScrollView>
     </View>
   );
