@@ -47,10 +47,6 @@ export default function HomeScreen() {
           <Text>&nbsp;&nbsp;&nbsp;</Text>
           <Icon.Search stroke="white" strokeWidth={1.2} height="22" />
           <Text>&nbsp;&nbsp;&nbsp;</Text>
-          <Image
-            source={require("../assets/default-pfp.png")}
-            style={{ height: 25, width: 25, borderRadius: 20 }}
-          />
         </View>
       </SafeAreaView>
 
@@ -88,6 +84,8 @@ export default function HomeScreen() {
             })}
           </ScrollView>
         </View>
+
+        <VideoCard video={videos[2]} />
 
         <View
           style={{

@@ -1,9 +1,10 @@
 import { View, Text, Image } from "react-native";
 import React from "react";
+import * as Icon from "react-native-feather";
 
 export default function VideoCard({ video }) {
   return (
-    <View>
+    <View className="pt-2">
       <Image source={video.thumbnail} className="h-52 w-full" />
       <View className="flex items-end mr-2 mb-5 -mt-6">
         <View className="bg-black rounded px-1">
@@ -16,7 +17,13 @@ export default function VideoCard({ video }) {
         <Image source={video.avatar} className="h-9 w-9 rounded-full" />
         <View className="flex-1 space-y-1">
           <Text className="text-white">{video.title}</Text>
-          <Text className='text-zinc-400 text-xs'>{video.channelTitle} • {video.publishedText}</Text>
+          <Text className="text-zinc-400 text-xs">
+            {video.channelTitle} • {video.viewCount} views •{" "}
+            {video.publishedText}
+          </Text>
+        </View>
+        <View className="self-start">
+          <Icon.MoreVertical stroke="white" strokeWidth={2} height={15} />
         </View>
       </View>
     </View>
