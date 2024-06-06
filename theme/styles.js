@@ -18,4 +18,49 @@ export const styles = StyleSheet.create({
     height: 40,
     width: 40,
   },
+  homeHeaderText: {
+    color: "white",
+    fontSize: 20,
+    fontWeight: "bold",
+  },
+  homeHeaderButtons: {
+    flexDirection: "row",
+    alignItems: "center",
+    padding: 5,
+  },
+  homeCategoryContainer: {
+    flex: 1,
+    marginTop: 5,
+  },
+  homeCategories: {
+    paddingLeft: 10,
+  },
+  homeCategoriesScrollView: {
+    padding: 5,
+    paddingBottom: 10,
+  },
+  homeShortsContainer: {
+    padding: 5,
+    paddingLeft: 15,
+    maxHeight: 600,
+  },
+  homeShortsFormatting: {
+    flexDirection: "row",
+    alignItems: "center",
+  },
+  homeShortsImages: {
+    height: 25,
+    width: 20,
+  },
+  homeShortsText: {
+    color: "white",
+    fontSize: 20,
+    paddingLeft: 5,
+    fontWeight: "bold",
+    padding: 10,
+  },
+  homeShortsMap: {
+    flexDirection: "column",
+    flexWrap: "wrap",
+  },
 });

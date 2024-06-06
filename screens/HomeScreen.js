@@ -30,13 +30,9 @@ export default function HomeScreen() {
             style={styles.homeHeaderLogo}
             source={require("../assets/youtube-logo.png")}
           />
-          <Text style={{ color: "white", fontSize: 20, fontWeight: "bold" }}>
-            YouTube
-          </Text>
+          <Text style={styles.homeHeaderText}>YouTube</Text>
         </View>
-        <View
-          style={{ flexDirection: "row", alignItems: "center", padding: 5 }}
-        >
+        <View style={styles.homeHeaderButtons}>
           <Icon.Cast stroke="white" strokeWidth={1.2} height="22" />
           <Text>&nbsp;&nbsp;&nbsp;</Text>
           <Icon.Bell stroke="white" strokeWidth={1.2} height="22" />
@@ -46,13 +42,15 @@ export default function HomeScreen() {
         </View>
       </SafeAreaView>
 
+      {/* Categories */}
+
       <ScrollView
-        style={{ flex: 1, marginTop: 5 }}
+        style={styles.homeCategoryContainer}
         showsVerticalScrollIndicator={false}
       >
-        <View style={{ paddingLeft: 10 }}>
+        <View style={styles.homeCategories}>
           <ScrollView
-            style={{ padding: 5, paddingBottom: 10 }}
+            style={styles.homeCategoriesScrollView}
             horizontal={true}
             showsHorizontalScrollIndicator={false}
           >
@@ -83,35 +81,22 @@ export default function HomeScreen() {
 
         <VideoCard video={suggestedVideos[0]} />
 
-        <View
-          style={{
-            padding: 5,
-            paddingLeft: 15,
-            maxHeight: 600,
-          }}
-        >
-          <View style={{ flexDirection: "row", alignItems: "center" }}>
+        {/* Shorts */}
+
+        <View style={styles.homeShortsContainer}>
+          <View style={styles.homeShortsFormatting}>
             <Image
               source={require("../assets/youtube-shorts-logo-E2BF31FE28-seeklogo.com.png")}
-              style={{ height: 25, width: 20 }}
+              style={styles.homeShortsImages}
             />
             <Text
-              style={{
-                color: "white",
-                fontSize: 20,
-                paddingLeft: 5,
-                fontWeight: "bold",
-                padding: 10,
-              }}
+              style={styles.homeShortsText}
             >
               Shorts
             </Text>
           </View>
           <View
-            style={{
-              flexDirection: "column",
-              flexWrap: "wrap",
-            }}
+            style={styles.homeShortsMap}
           >
             {shorts.map((item, index) => (
               <ShortsCard item={item} key={index} />

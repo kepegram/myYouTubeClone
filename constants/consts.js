@@ -55,7 +55,7 @@ export const videos = [
     id: 1,
     title: "Squid Game (MrBeast Edition)",
     channelTitle: "MrBeast",
-    thumbnail: require("../assets/thumbnails/fd4owsn1vgfa1.jpg"),
+    thumbnail: require("../assets/thumbnails/maxresdefault.jpg"),
     avatar: require("../assets/pfps/mrBeast-logo.jpg"),
     viewCount: "12M",
     duration: "12:23",
@@ -82,3 +82,5 @@ export const videos = [
     publishedText: "4 years ago",
   },
 ];
+
+export const tabShorts = [];
