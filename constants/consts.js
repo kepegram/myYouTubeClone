@@ -37,6 +37,19 @@ export const shorts = [
   },
 ];
 
+export const suggestedVideos = [
+  {
+    id: 1,
+    title: "Learn to code HERE!",
+    channelTitle: "Dennis Dion",
+    thumbnail: require("../assets/thumbnails/coding-design-template-7fdcbfed1fb311be96a282920fba8515_screen.jpg"),
+    avatar: require("../assets/pfps/dennis-laptop-coding.jpg"),
+    viewCount: "103k",
+    duration: "45:22",
+    publishedText: "1 week ago",
+  },
+];
+
 export const videos = [
   {
     id: 1,

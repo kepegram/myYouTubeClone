@@ -1,4 +1,3 @@
-import { StatusBar } from "expo-status-bar";
 import {
   StyleSheet,
   Text,
@@ -11,28 +10,25 @@ import {
 import { SafeAreaView } from "react-native-safe-area-context";
 import * as Icon from "react-native-feather";
 import { useState } from "react";
-import { categories, shorts, videos } from "../constants/consts";
+import {
+  categories,
+  shorts,
+  videos,
+  suggestedVideos,
+} from "../constants/consts";
 import ShortsCard from "../components/shortsCard";
 import VideoCard from "../components/videoCard";
+import { styles } from "../theme/styles";
 
 export default function HomeScreen() {
   const [activeCategory, setActiveCategory] = useState("All");
   return (
-    <View style={{ backgroundColor: "#222222", flex: 1 }}>
-      <StatusBar style="light" />
-      <SafeAreaView
-        style={{ flexDirection: "row", justifyContent: "space-between" }}
-      >
-        <View
-          style={{
-            flexDirection: "row",
-            alignItems: "center",
-            paddingLeft: 10,
-          }}
-        >
+    <View style={styles.homeContainer}>
+      <SafeAreaView style={styles.homeHeaderButtonsContainer}>
+        <View style={styles.homeHeaderLogoContainer}>
           <Image
+            style={styles.homeHeaderLogo}
             source={require("../assets/youtube-logo.png")}
-            style={{ height: 40, width: 40 }}
           />
           <Text style={{ color: "white", fontSize: 20, fontWeight: "bold" }}>
             YouTube
@@ -85,16 +81,13 @@ export default function HomeScreen() {
           </ScrollView>
         </View>
 
-        <VideoCard video={videos[2]} />
+        <VideoCard video={suggestedVideos[0]} />
 
         <View
           style={{
-            padding: 15,
-            marginTop: 10,
+            padding: 5,
             paddingLeft: 15,
-            borderColor: "grey",
-            borderBottomWidth: 3,
-            borderTopWidth: 3,
+            maxHeight: 600,
           }}
         >
           <View style={{ flexDirection: "row", alignItems: "center" }}>
@@ -114,15 +107,16 @@ export default function HomeScreen() {
               Shorts
             </Text>
           </View>
-          <ScrollView
-            horizontal={true}
-            showsHorizontalScrollIndicator={false}
-            className="px-4"
+          <View
+            style={{
+              flexDirection: "column",
+              flexWrap: "wrap",
+            }}
           >
             {shorts.map((item, index) => (
               <ShortsCard item={item} key={index} />
             ))}
-          </ScrollView>
+          </View>
         </View>
 
         <ScrollView showsVerticalScrollIndicator={false}>

@@ -1,3 +1,3 @@
-fix icons in bottom bar
+continue to transfer styling to syles.js
 
 https://www.youtube.com/watch?v=3DD57SNGDjo&list=PLKWMD009Q4qSHIMF6Swy4VQs5z6U97LJm&index=7&ab_channel=CodeWithNomi
