@@ -83,4 +83,11 @@ export const videos = [
   },
 ];
 
-export const tabShorts = [];
+export const tabShorts = [
+  {
+    id: 1,
+    title: "POV from the driver seat of Ferrari 488 challenge race car!",
+    short: require("../assets/thumbnails/pov-short.jpeg"),
+    avatar: require("../assets/thumbnails/driver-selfie.jpeg"),
+  },
+];

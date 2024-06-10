@@ -63,4 +63,23 @@ export const styles = StyleSheet.create({
     flexDirection: "column",
     flexWrap: "wrap",
   },
+
+  // shorts UI
+
+  shortsImage: {
+    height: "100%",
+    width: "100%",
+  },
+  shortsHeaderContainer: {
+    flexDirection: "row",
+    position: "absolute",
+    paddingTop: 20,
+    paddingLeft: 10,
+  },
+  shortsButtonsContainer: {
+    flexDirection: "column",
+    position: "absolute",
+    paddingLeft: 335,
+    paddingTop: 300,
+  },
 });

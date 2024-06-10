@@ -15,7 +15,7 @@ export default function BottomTab() {
       initialRouteName="Home"
       screenOptions={({ route }) => ({
         headerShown: false,
-        tabBarShowLabel: route.label === "Create" ? false : true,
+        tabBarShowLabel: true,
         tabBarStyle: {
           backgroundColor: "#101010",
           borderTopColor: "grey",
