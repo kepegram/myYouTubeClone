@@ -10,9 +10,7 @@ export default function ShortsScreen() {
         source={require("../assets/thumbnails/pov-short.jpeg")}
         style={styles.shortsImage}
       />
-      <View
-        style={styles.shortsHeaderContainer}
-      >
+      <View style={styles.shortsHeaderContainer}>
         <Icon.Search
           stroke={"white"}
           strokeWidth={3}
@@ -26,28 +24,31 @@ export default function ShortsScreen() {
           paddingTop={30}
         />
       </View>
-      <View
-        style={styles.shortsButtonsContainer}
-      >
-        <Icon.ThumbsUp
-          stroke={"white"}
-          fill={"white"}
-          height="60"
-          width="30"
-        />
+      <View style={styles.shortsButtonsContainer}>
+        <Icon.ThumbsUp stroke={"white"} fill={"white"} height="60" width="30" />
+        <Text style={{ color: "white", fontWeight: "bold" }}>121K</Text>
         <Icon.ThumbsDown
           stroke={"white"}
           fill={"white"}
           height="60"
           width="30"
         />
+        <Text style={{ color: "white", fontWeight: "bold", fontSize: 10 }}>
+          Dislike
+        </Text>
         <Icon.MessageSquare
           stroke={"white"}
           fill={"white"}
           height="60"
           width="30"
         />
+        <Text style={{ color: "white", fontWeight: "bold", fontSize: 12 }}>
+          2,102
+        </Text>
         <Icon.Share stroke={"white"} strokeWidth={3} height="60" width="30" />
+        <Text style={{ color: "white", fontWeight: "bold", fontSize: 12 }}>
+          Share
+        </Text>
       </View>
       <View style={{ position: "absolute", paddingLeft: 330, paddingTop: 560 }}>
         <Image

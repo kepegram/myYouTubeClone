@@ -80,6 +80,6 @@ export const styles = StyleSheet.create({
     flexDirection: "column",
     position: "absolute",
     paddingLeft: 335,
-    paddingTop: 300,
+    paddingTop: 250,
   },
 });

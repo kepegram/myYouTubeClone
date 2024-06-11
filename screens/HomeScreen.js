@@ -23,7 +23,7 @@ import { styles } from "../theme/styles";
 export default function HomeScreen() {
   const [activeCategory, setActiveCategory] = useState("All");
   return (
-    <View style={styles.homeContainer}>
+    <ScrollView style={styles.homeContainer}>
       <SafeAreaView style={styles.homeHeaderButtonsContainer}>
         <View style={styles.homeHeaderLogoContainer}>
           <Image
@@ -89,15 +89,9 @@ export default function HomeScreen() {
               source={require("../assets/youtube-shorts-logo-E2BF31FE28-seeklogo.com.png")}
               style={styles.homeShortsImages}
             />
-            <Text
-              style={styles.homeShortsText}
-            >
-              Shorts
-            </Text>
+            <Text style={styles.homeShortsText}>Shorts</Text>
           </View>
-          <View
-            style={styles.homeShortsMap}
-          >
+          <View style={styles.homeShortsMap}>
             {shorts.map((item, index) => (
               <ShortsCard item={item} key={index} />
             ))}
@@ -110,6 +104,6 @@ export default function HomeScreen() {
           ))}
         </ScrollView>
       </ScrollView>
-    </View>
+    </ScrollView>
   );
 }
