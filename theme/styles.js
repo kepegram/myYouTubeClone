@@ -1,4 +1,7 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet, Dimensions } from "react-native";
+
+const windowWidth = Dimensions.get("window").width;
+const windowHeight = Dimensions.get("window").height;
 
 export const styles = StyleSheet.create({
   homeContainer: {
@@ -81,5 +84,43 @@ export const styles = StyleSheet.create({
     position: "absolute",
     paddingLeft: 335,
     paddingTop: 250,
+  },
+
+  // subsUI
+
+  container: {
+    flex: 1,
+    backgroundColor: "#101010",
+  },
+  header: {
+    paddingHorizontal: 10,
+    paddingVertical: 8,
+  },
+  userItem: {
+    marginRight: 10,
+    shadowColor: "#000",
+    shadowOpacity: 0.2,
+    shadowOffset: { width: 0, height: 2 },
+    shadowRadius: 4,
+  },
+  userPhoto: {
+    width: 55,
+    height: 55,
+    borderRadius: 30,
+  },
+  userName: {
+    marginTop: 5,
+    textAlign: "center",
+    color: "white",
+  },
+  selectedUserName: {
+    marginTop: 5,
+    textAlign: "center",
+    fontWeight: "bold",
+    color: "white",
+  },
+  statusPhoto: {
+    width: windowWidth,
+    height: windowHeight,
   },
 });

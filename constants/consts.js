@@ -91,3 +91,105 @@ export const tabShorts = [
     avatar: require("../assets/thumbnails/driver-selfie.jpeg"),
   },
 ];
+
+export const users = [
+  {
+    id: 1,
+    name: "John",
+    avatar: "https://bootdey.com/img/Content/avatar/avatar1.png",
+    statusPhotos: [
+      {
+        id: 1,
+        image: "https://www.bootdey.com/image/250x250/FF0000/FF0000",
+      },
+    ],
+  },
+  {
+    id: 2,
+    name: "Jake",
+    avatar: "https://bootdey.com/img/Content/avatar/avatar2.png",
+    statusPhotos: [
+      {
+        id: 1,
+        image: "https://www.bootdey.com/image/250x250/7FFF00/7FFF00",
+      },
+    ],
+  },
+  {
+    id: 3,
+    name: "Alice",
+    avatar: "https://bootdey.com/img/Content/avatar/avatar3.png",
+    statusPhotos: [
+      {
+        id: 1,
+        image: "https://www.bootdey.com/image/250x250/00CED1/00CED1",
+      },
+    ],
+  },
+  {
+    id: 4,
+    name: "Ben",
+    avatar: "https://bootdey.com/img/Content/avatar/avatar4.png",
+    statusPhotos: [
+      {
+        id: 1,
+        image: "https://www.bootdey.com/image/250x250/BA55D3/BA55D3",
+      },
+    ],
+  },
+  {
+    id: 5,
+    name: "Alex",
+    avatar: "https://bootdey.com/img/Content/avatar/avatar5.png",
+    statusPhotos: [
+      {
+        id: 1,
+        image: "https://www.bootdey.com/image/250x250/FF4500/FF4500",
+      },
+    ],
+  },
+  {
+    id: 6,
+    name: "Leo",
+    avatar: "https://bootdey.com/img/Content/avatar/avatar6.png",
+    statusPhotos: [
+      {
+        id: 1,
+        image: "https://www.bootdey.com/image/250x250/00FF00/00FF00",
+      },
+    ],
+  },
+  {
+    id: 7,
+    name: "Nick",
+    avatar: "https://bootdey.com/img/Content/avatar/avatar7.png",
+    statusPhotos: [
+      {
+        id: 1,
+        image: "https://www.bootdey.com/image/250x250/FF4500/FF4500",
+      },
+    ],
+  },
+  {
+    id: 8,
+    name: "Jill",
+    avatar: "https://bootdey.com/img/Content/avatar/avatar8.png",
+    statusPhotos: [
+      {
+        id: 1,
+        image: "https://www.bootdey.com/image/250x250/191970/191970",
+      },
+    ],
+  },
+];
+
+export const subsCategories = [
+  "All",
+  "Today",
+  "Videos",
+  "Shorts",
+  "Live",
+  "Posts",
+  "Continue Watching",
+  "Unwatched",
+];
