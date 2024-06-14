@@ -14,7 +14,6 @@ Shorts:
 
 <p>
 <img src = 'assets/app-imgs/shorts-screen.png' height='600'>
-<img src = 'assets/app-imgs/Screenshot_20240601_181721_myWallpaper.jpg' height='600'>
 </p>
 
 Create:
