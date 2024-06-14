@@ -67,7 +67,7 @@ export default function HomeScreen() {
                     borderRadius: 5,
                     padding: 5,
                     marginRight: 5,
-                    height: 25,
+                    height: 30,
                   }}
                 >
                   <Text style={{ color: textClass }}>{category}</Text>

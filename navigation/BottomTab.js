@@ -20,6 +20,7 @@ export default function BottomTab() {
           backgroundColor: "#101010",
           borderTopColor: "grey",
           borderTopWidth: 1,
+          display: route.name === "Create" ? "none" : null,
         },
         tabBarActiveTintColor: "white",
         tabBarIcon: ({ color, size }) => {
