@@ -1,7 +1,6 @@
 export const categories = [
   "All",
   "Gaming",
-  "React Routers",
   "Music",
   "Coding",
   "Racing",
@@ -14,6 +13,17 @@ export const categories = [
   "News",
 ];
 
+export const subsCategories = [
+  "All",
+  "Today",
+  "Videos",
+  "Shorts",
+  "Live",
+  "Posts",
+  "Continue Watching",
+  "Unwatched",
+];
+
 export const shorts = [
   {
     id: 1,
@@ -22,7 +32,7 @@ export const shorts = [
   },
   {
     id: 2,
-    title: "Fruit Shop UI in React Native",
+    title: "CLEAN UI in React Native",
     image: require("../assets/thumbnails/user-interface.png"),
   },
   {
@@ -37,6 +47,29 @@ export const shorts = [
   },
 ];
 
+export const subShorts = [
+  {
+    id: 1,
+    title: "Hitting 10 Million Subscribers!",
+    image: require("../assets/shorts/mrbshort.jpg"),
+  },
+  {
+    id: 2,
+    title: "Make a clay doll with us!",
+    image: require("../assets/shorts/5minshort.jpg"),
+  },
+  {
+    id: 3,
+    title: "HOW did he do that many??",
+    image: require("../assets/shorts/dudeshorts.jpg"),
+  },
+  {
+    id: 4,
+    title: "Pet Care Song #Shorts",
+    image: require("../assets/shorts/coco-short.jpg"),
+  },
+];
+
 export const suggestedVideos = [
   {
     id: 1,
@@ -47,6 +80,16 @@ export const suggestedVideos = [
     viewCount: "103k",
     duration: "45:22",
     publishedText: "1 week ago",
+  },
+  {
+    id: 2,
+    title: "Squid Game (MrBeast Edition)",
+    channelTitle: "MrBeast",
+    thumbnail: require("../assets/thumbnails/maxresdefault.jpg"),
+    avatar: require("../assets/pfps/subs/mrb.jpg"),
+    viewCount: "222M",
+    duration: "12:23",
+    publishedText: "2 years ago",
   },
 ];
 
@@ -83,6 +126,39 @@ export const videos = [
   },
 ];
 
+export const subVideos = [
+  {
+    id: 1,
+    title: "Wait Your Turn | CoComelon Nursery Rhymes & Kid Songs",
+    channelTitle: "CoComelon",
+    thumbnail: require("../assets/thumbnails/subs/cocothumb.jpg"),
+    avatar: require("../assets/pfps/subs/coco.jpg"),
+    viewCount: "12M",
+    duration: "12:23",
+    publishedText: "2 years ago",
+  },
+  {
+    id: 2,
+    title: "Dude Perfect Christmas Special | FACE OFF",
+    channelTitle: "Dude Perfect",
+    thumbnail: require("../assets/thumbnails/subs/dudethumb.jpg"),
+    avatar: require("../assets/pfps/subs/dude.jpg"),
+    viewCount: "9M",
+    duration: "25:23",
+    publishedText: "1 month ago",
+  },
+  {
+    id: 3,
+    title: "25 Bright Life Hacks Against Stress",
+    channelTitle: "5-Minute Crafts",
+    thumbnail: require("../assets/thumbnails/subs/5minthumb.jpg"),
+    avatar: require("../assets/pfps/subs/5min.jpg"),
+    viewCount: "4.3M",
+    duration: "12:34",
+    publishedText: "4 years ago",
+  },
+];
+
 export const tabShorts = [
   {
     id: 1,
@@ -95,101 +171,42 @@ export const tabShorts = [
 export const users = [
   {
     id: 1,
-    name: "John",
-    avatar: "https://bootdey.com/img/Content/avatar/avatar1.png",
-    statusPhotos: [
-      {
-        id: 1,
-        image: "https://www.bootdey.com/image/250x250/FF0000/FF0000",
-      },
-    ],
+    name: "MrBeast",
+    avatar: require("../assets/pfps/subs/mrb.jpg"),
   },
   {
     id: 2,
-    name: "Jake",
-    avatar: "https://bootdey.com/img/Content/avatar/avatar2.png",
-    statusPhotos: [
-      {
-        id: 1,
-        image: "https://www.bootdey.com/image/250x250/7FFF00/7FFF00",
-      },
-    ],
+    name: "Cocome...",
+    avatar: require("../assets/pfps/subs/coco.jpg"),
   },
   {
     id: 3,
-    name: "Alice",
-    avatar: "https://bootdey.com/img/Content/avatar/avatar3.png",
-    statusPhotos: [
-      {
-        id: 1,
-        image: "https://www.bootdey.com/image/250x250/00CED1/00CED1",
-      },
-    ],
+    name: "Vlad and...",
+    avatar: require("../assets/pfps/subs/vn.jpg"),
   },
   {
     id: 4,
-    name: "Ben",
-    avatar: "https://bootdey.com/img/Content/avatar/avatar4.png",
-    statusPhotos: [
-      {
-        id: 1,
-        image: "https://www.bootdey.com/image/250x250/BA55D3/BA55D3",
-      },
-    ],
+    name: "Like Nast...",
+    avatar: require("../assets/pfps/subs/liken.jpg"),
   },
   {
     id: 5,
-    name: "Alex",
-    avatar: "https://bootdey.com/img/Content/avatar/avatar5.png",
-    statusPhotos: [
-      {
-        id: 1,
-        image: "https://www.bootdey.com/image/250x250/FF4500/FF4500",
-      },
-    ],
+    name: "5-Minute...",
+    avatar: require("../assets/pfps/subs/5min.jpg"),
   },
   {
     id: 6,
-    name: "Leo",
-    avatar: "https://bootdey.com/img/Content/avatar/avatar6.png",
-    statusPhotos: [
-      {
-        id: 1,
-        image: "https://www.bootdey.com/image/250x250/00FF00/00FF00",
-      },
-    ],
+    name: "Moviecli...",
+    avatar: require("../assets/pfps/subs/movie.jpg"),
   },
   {
     id: 7,
-    name: "Nick",
-    avatar: "https://bootdey.com/img/Content/avatar/avatar7.png",
-    statusPhotos: [
-      {
-        id: 1,
-        image: "https://www.bootdey.com/image/250x250/FF4500/FF4500",
-      },
-    ],
+    name: "Dude Per...",
+    avatar: require("../assets/pfps/subs/dude.jpg"),
   },
   {
     id: 8,
-    name: "Jill",
-    avatar: "https://bootdey.com/img/Content/avatar/avatar8.png",
-    statusPhotos: [
-      {
-        id: 1,
-        image: "https://www.bootdey.com/image/250x250/191970/191970",
-      },
-    ],
+    name: "A4",
+    avatar: require("../assets/pfps/subs/a4.jpg"),
   },
-];
-
-export const subsCategories = [
-  "All",
-  "Today",
-  "Videos",
-  "Shorts",
-  "Live",
-  "Posts",
-  "Continue Watching",
-  "Unwatched",
 ];

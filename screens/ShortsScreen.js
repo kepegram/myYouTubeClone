@@ -1,4 +1,4 @@
-import { View, Text, Image, ScrollView, Pressable } from "react-native";
+import { View, Text, Image, Pressable } from "react-native";
 import React from "react";
 import * as Icon from "react-native-feather";
 import { styles } from "../theme/styles";
@@ -33,68 +33,43 @@ export default function ShortsScreen() {
           height="60"
           width="30"
         />
-        <Text style={{ color: "white", fontWeight: "bold", fontSize: 10 }}>
-          Dislike
-        </Text>
+        <Text style={styles.shortsButtonText}>Dislike</Text>
         <Icon.MessageSquare
           stroke={"white"}
           fill={"white"}
           height="60"
           width="30"
         />
-        <Text style={{ color: "white", fontWeight: "bold", fontSize: 12 }}>
-          2,102
-        </Text>
+        <Text style={styles.shortsButtonText}>2,102</Text>
         <Icon.Share stroke={"white"} strokeWidth={3} height="60" width="30" />
-        <Text style={{ color: "white", fontWeight: "bold", fontSize: 12 }}>
-          Share
-        </Text>
+        <Text style={styles.shortsButtonText}>Share</Text>
       </View>
-      <View style={{ position: "absolute", paddingLeft: 330, paddingTop: 560 }}>
+      <View style={styles.shortsSoundImage}>
         <Image
           source={require("../assets/thumbnails/driver-selfie.jpeg")}
           style={{ height: 40, width: 40 }}
         />
       </View>
-      <View style={{ position: "absolute", paddingTop: 495 }}>
+      <View style={styles.shortsDescriptionUserImage}>
         <Image
           source={require("../assets/thumbnails/driver-selfie.jpeg")}
           style={{ height: 30, width: 30, borderRadius: 20 }}
         />
       </View>
-      <View style={{ position: "absolute", paddingTop: 500 }}>
-        <Text style={{ color: "white", fontWeight: "bold", paddingLeft: 40 }}>
-          @Don Patron
-        </Text>
+      <View style={styles.shortsDescriptionUser}>
+        <Text style={{ color: "white", fontWeight: "bold" }}>@Don Patron</Text>
       </View>
-      <View style={{ position: "absolute", paddingTop: 495, paddingLeft: 140 }}>
-        <Pressable
-          style={{
-            backgroundColor: "white",
-            borderRadius: 20,
-            height: 30,
-            width: 90,
-            alignItems: "center",
-          }}
-        >
+      <View style={styles.shortsDescriptionSubscribeButton}>
+        <Pressable style={styles.shortsSubscribeButtonStyling}>
           <Text style={{ paddingTop: 5 }}>Subscribe</Text>
         </Pressable>
       </View>
-      <View style={{ position: "absolute", paddingTop: 545, paddingLeft: 10 }}>
+      <View style={styles.shortsDescription}>
         <Text style={{ color: "white" }}>Ferrari 458 GT3 Cockpit POV</Text>
       </View>
-      <View
-        style={{
-          position: "absolute",
-          paddingTop: 575,
-          paddingLeft: 10,
-          flexDirection: "row",
-        }}
-      >
+      <View style={styles.shortsSoundImage}>
         <Icon.Music stroke={"white"} strokeWidth={2} />
-        <Text style={{ paddingTop: 3, paddingLeft: 10, color: "white" }}>
-          Original Sound
-        </Text>
+        <Text style={styles.shortsSoundText}>Original Sound</Text>
       </View>
     </View>
   );

@@ -1,6 +1,4 @@
-add more videos and thumbails/pfps for subscriber page
 continue user profile page
-fix x button on create page
 import all styles into styles.js
 
 https://www.youtube.com/watch?v=3DD57SNGDjo&list=PLKWMD009Q4qSHIMF6Swy4VQs5z6U97LJm&index=7&ab_channel=CodeWithNomi

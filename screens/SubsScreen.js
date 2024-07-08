@@ -9,11 +9,11 @@ import {
   SafeAreaView,
 } from "react-native";
 import {
-  videos,
+  subVideos,
   subsCategories,
   users,
   suggestedVideos,
-  shorts,
+  subShorts,
 } from "../constants/consts";
 import { styles } from "../theme/styles";
 import VideoCard from "../components/videoCard";
@@ -22,21 +22,21 @@ import * as Icon from "react-native-feather";
 
 const SubsScreen = () => {
   const [selectedUser, setSelectedUser] = useState(1);
-  const [statusPhotos, setStatusPhotos] = useState(users[0].statusPhotos);
-  const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0);
   const [activeCategory, setActiveCategory] = useState("All");
 
   const handleUserSelect = (userId) => {
     setSelectedUser(userId);
-    setStatusPhotos(
-      users.find((user) => user.id === userId)?.statusPhotos || []
-    );
-    setCurrentPhotoIndex(0);
   };
 
   return (
     <ScrollView style={styles.container}>
-      <SafeAreaView style={styles.homeHeaderButtonsContainer}>
+      <SafeAreaView
+        style={{
+          flexDirection: "row",
+          justifyContent: "space-between",
+          paddingTop: 30,
+        }}
+      >
         <View style={styles.homeHeaderLogoContainer}>
           <Image
             style={styles.homeHeaderLogo}
@@ -61,7 +61,7 @@ const SubsScreen = () => {
               onPress={() => handleUserSelect(user.id)}
               style={styles.userItem}
             >
-              <Image source={{ uri: user.avatar }} style={styles.userPhoto} />
+              <Image source={user.avatar} style={styles.userPhoto} />
               <Text
                 style={
                   selectedUser === user.id
@@ -107,7 +107,7 @@ const SubsScreen = () => {
         </View>
       </View>
 
-      <VideoCard video={suggestedVideos[0]} />
+      <VideoCard video={suggestedVideos[1]} />
 
       {/* Shorts */}
 
@@ -120,14 +120,14 @@ const SubsScreen = () => {
           <Text style={styles.homeShortsText}>Shorts</Text>
         </View>
         <ScrollView horizontal style={{ flexDirection: "row" }}>
-          {shorts.map((item, index) => (
+          {subShorts.map((item, index) => (
             <ShortsCard item={item} key={index} />
           ))}
         </ScrollView>
       </View>
 
       <ScrollView showsVerticalScrollIndicator={false}>
-        {videos.map((video, index) => (
+        {subVideos.map((video, index) => (
           <VideoCard video={video} key={index} />
         ))}
       </ScrollView>

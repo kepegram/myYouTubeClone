@@ -76,14 +76,63 @@ export const styles = StyleSheet.create({
   shortsHeaderContainer: {
     flexDirection: "row",
     position: "absolute",
-    paddingTop: 20,
-    paddingLeft: 10,
+    paddingTop: windowHeight - 920,
+    paddingLeft: windowWidth - 340,
   },
   shortsButtonsContainer: {
     flexDirection: "column",
     position: "absolute",
-    paddingLeft: 335,
-    paddingTop: 250,
+    paddingLeft: windowWidth - 45,
+    paddingTop: windowHeight - 420,
+  },
+  shortsButtonText: {
+    color: "white",
+    fontWeight: "bold",
+    fontSize: 12,
+  },
+  shortsSoundImage: {
+    position: "absolute",
+    paddingLeft: windowWidth - 50,
+    paddingTop: windowHeight - 100,
+  },
+  shortsDescriptionUserImage: {
+    position: "absolute",
+    paddingTop: windowHeight - 145,
+    paddingLeft: windowWidth - 435,
+  },
+  shortsDescriptionUser: {
+    position: "absolute",
+    paddingTop: windowHeight - 140,
+    paddingLeft: windowWidth - 400,
+  },
+  shortsSubscribeButtonStyling: {
+    backgroundColor: "white",
+    borderRadius: 20,
+    height: 30,
+    width: 90,
+    alignItems: "center",
+  },
+  shortsDescriptionSubscribeButton: {
+    position: "absolute",
+    paddingTop: windowHeight - 145,
+    paddingLeft: windowWidth - 310,
+  },
+  shortsDescription: {
+    position: "absolute",
+    paddingTop: windowHeight - 110,
+    paddingLeft: windowWidth - 430,
+  },
+  shortsSoundImage: {
+    position: "absolute",
+    paddingTop: windowHeight - 85,
+    paddingLeft: windowWidth - 430,
+    flexDirection: "row",
+  },
+  shortsSoundText: {
+    position: "absolute",
+    paddingTop: windowHeight - 80,
+    paddingLeft: windowWidth - 400,
+    color: "white",
   },
 
   // subsUI
@@ -104,8 +153,8 @@ export const styles = StyleSheet.create({
     shadowRadius: 4,
   },
   userPhoto: {
-    width: 55,
-    height: 55,
+    width: 65,
+    height: 65,
     borderRadius: 30,
   },
   userName: {

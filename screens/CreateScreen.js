@@ -16,7 +16,7 @@ export default function CreateScreen() {
     <View style={{ flex: 1, backgroundColor: "black" }}>
       <View
         style={{
-          paddingTop: 20,
+          paddingTop: 25,
           borderWidth: 8,
           borderRadius: 10,
           borderBottomColor: "#4C4C4C",
@@ -74,8 +74,8 @@ export default function CreateScreen() {
       <View
         style={{
           position: "absolute",
-          paddingTop: 40,
-          paddingLeft: Dimensions.get("screen").width - 45,
+          paddingTop: Dimensions.get("screen").height - 735,
+          paddingLeft: Dimensions.get("screen").width - 50,
         }}
       >
         <View
@@ -102,7 +102,7 @@ export default function CreateScreen() {
         style={{
           alignItems: "center",
           justifyContent: "center",
-          paddingTop: 450,
+          paddingTop: Dimensions.get("window").height - 200,
         }}
       >
         <View
