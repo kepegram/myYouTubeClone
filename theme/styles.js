@@ -76,7 +76,7 @@ export const styles = StyleSheet.create({
   shortsHeaderContainer: {
     flexDirection: "row",
     position: "absolute",
-    paddingTop: windowHeight - 920,
+    paddingTop: windowHeight - 640,
     paddingLeft: windowWidth - 340,
   },
   shortsButtonsContainer: {
